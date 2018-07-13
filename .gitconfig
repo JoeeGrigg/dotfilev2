@@ -1,0 +1,18 @@
+[user]
+  name = Joe Grigg
+  email = account@joegrigg.com
+[alias]
+  pom = push origin master
+  pdm = push dokku master
+  ls = !sh -c 'git log --pretty --color=always --oneline --reverse $1 | less -r' -
+	lp = ! git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit $1 | less -r
+	lpd = ! git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -p $1 | less -r
+  tree = log --graph --oneline --all
+  st = status -s
+  c = commit
+  cm = commit -m
+  aa = add .
+  ca = commit --amend
+  m = !sh -c 'git merge --no-ff $1' -
+[core]
+  excludesfile = /Users/joseph.grigg/.gitignore

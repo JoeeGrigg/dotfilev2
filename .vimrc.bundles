@@ -1,0 +1,42 @@
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'gmarik/Vundle.vim'
+
+" Appearance
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'lilydjwg/colorizer'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'colepeters/spacemacs-theme.vim'
+
+" Syntax
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'tpope/vim-endwise'
+Plugin 'Matt-Deacalion/vim-systemd-syntax'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'rhysd/vim-crystal'
+Plugin 'tmux-plugins/vim-tmux'
+Plugin 'ngmy/vim-rubocop'
+Plugin 'robbles/logstash.vim'
+
+" Navigation
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'dkprice/vim-easygrep'
+
+" Git
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-fugitive'
+
+" Other
+Plugin 'terryma/vim-smooth-scroll'
+Plugin 'ConradIrwin/vim-bracketed-paste'
+Plugin 'godlygeek/tabular'
+
+call vundle#end()
+filetype plugin indent on
