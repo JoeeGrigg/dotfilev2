@@ -8,7 +8,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'lilydjwg/colorizer'
-Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+"Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plugin 'ryanoasis/vim-devicons'
 Plugin 'colepeters/spacemacs-theme.vim'
 
@@ -23,6 +23,8 @@ Plugin 'rhysd/vim-crystal'
 Plugin 'tmux-plugins/vim-tmux'
 Plugin 'ngmy/vim-rubocop'
 Plugin 'robbles/logstash.vim'
+Plugin 'hashivim/vim-terraform'
+Plugin 'posva/vim-vue'
 
 " Navigation
 Plugin 'scrooloose/nerdtree'
@@ -37,6 +39,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'terryma/vim-smooth-scroll'
 Plugin 'ConradIrwin/vim-bracketed-paste'
 Plugin 'godlygeek/tabular'
+Plugin 'djoshea/vim-autoread'
 
 call vundle#end()
 filetype plugin indent on

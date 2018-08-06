@@ -29,6 +29,11 @@ set shiftwidth=2
 
 " Enable mouse mode
 set mouse=a
+if has("mouse_sgr")
+  set ttymouse=sgr
+else
+  set ttymouse=xterm2
+end
 
 " Disable text wrapping
 set nowrap
@@ -39,6 +44,12 @@ set timeoutlen=1000 ttimeoutlen=0
 " Other
 set nocompatible
 set nofoldenable
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Key Bindings
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+set pastetoggle=<F3>
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Style
@@ -73,8 +84,10 @@ let g:airline_theme='light'
 let NERDTreeMouseMode=2
 let NERDTreeShowBookmarks=0
 let NERDTreeShowHidden=1
-let NERDTreeIgnore=['\~$', '\.swp$', '\.git', '\.hg', '\.svn', '\.bzr', '\.sass-cache']
+let NERDTreeIgnore=['\~$', '\.swp$', '\.git$', '\.hg', '\.svn', '\.bzr', '\.sass-cache']
 let NERDTreeMinimalUI=1
+let NERDTreeAutoDeleteBuffer = 1
+let NERDTreeDirArrows = 1
 nmap <silent> <C-D> :NERDTreeToggle<CR>
 
 " Devicons
